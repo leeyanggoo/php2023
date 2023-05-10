@@ -1,0 +1,190 @@
+/* join__inner */
+.join__inner {
+    padding: 5% 0;
+}
+.join__inner h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.join__inner .index {
+    text-align: center;
+}
+.join__inner .index ul {
+    position: relative;
+    display: inline-block;
+}
+.join__inner .index ul::before {
+    content: '';
+    background-color: var(--color__black);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 3px;
+    margin-top: -1px;
+    z-index: -1;
+}
+.join__inner .index ul li {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 3px solid var(--color__black);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    background-color: var(--bg__gray);
+}
+.join__inner .index ul li:nth-child(2) {
+    margin: 20px 30px;
+}
+.join__inner .index ul li.active {
+    background-color: var(--color__black);
+    color: var(--color__white)
+}
+
+.join__form {
+    padding: 10% 20%;
+}
+.join__form div {
+    margin-bottom: 3em;
+}
+.join__form .over {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.join__form .over label {
+    width: 100%;
+}
+.join__form .over input {
+    width: 70%;
+}
+.join__form .over .youCheck {
+    width: 28%;
+    display: inline-block;
+    background-color: var(--color__black);
+    border-radius: 5px;
+    color: var(--color__white);
+    text-align: center;
+    padding-top: 14px;
+}
+.join__form .over .msg {
+    width: 100%;
+}
+.join__form .msg {
+    padding: 7px 0;
+    color: var(--bg__red);
+}
+/* .join__form .msg::before {
+    content: '* ';
+} */
+
+
+.join__agree__inner {
+    padding: 10% 20% 0% 20%;
+}
+.join__agree {
+    margin-bottom: 50px;
+}
+.join__agree .agree {
+    width: 100%;
+    height: 300px;
+    background-color: var(--bg__gray2);
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.join__agree .agree::-webkit-scrollbar {
+    width: 10px;
+}
+.join__agree .agree::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #152543;
+}
+.join__agree .agree::-webkit-scrollbar-track {
+    background-color: #999;
+    border-radius: 10px;
+}
+.check {
+    display: flex;
+    align-items: center;
+    padding: 7px 0;
+}
+.check input {
+    margin-right: 20px;
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    /* vertical-align: -3px; */
+}
+.check label {
+    display: inline-block;
+    font-size: 18px;
+    margin: 0;
+}
+.join__fun {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.wave {
+    color: var(--color__white);
+    background-color: coral;
+    text-align: center;
+    animation: wave 0.1s infinite linear;
+    border-radius: 10px;
+    display: inline-block;
+}
+@keyframes wave {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+.agreeBtn {
+    display: inline-block;
+}
+.good {
+    animation: move 5s infinite linear;
+}
+@keyframes move {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* media */
+@media (max-width: 600px){
+    .intro__inner.center .intro__text{
+        font-size: 1rem;
+        padding: 0;
+    }
+    .join__form {
+        padding: 10% 10% 5% 10%;
+    }
+    .join__inner h2 {
+        font-size: 24px;
+    }
+    .join__form div label {
+        font-size: 1rem;
+    }
+    .join__form div input {
+        padding: 0.6em 1em;
+        font-size: 1rem;
+    }
+    .join__form button {
+        margin: 2em auto;
+        font-size: 1.2rem;
+    }
+    .join__form div {
+        margin-bottom: 2em;
+    }
+}
