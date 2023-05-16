@@ -1,0 +1,44 @@
+.kind__section {
+    color: var(--color__white);
+}
+.kind__section h3 {
+    font-size: 50px;
+    margin: 100px 0 30px 0;
+}
+.kind__section h4 {
+    font-size: 30px;
+}
+.kind__section p {
+    color: #c9c9c9;
+    font-size: 20px;
+    margin: 10px 0 100px 0;
+}
+.kind__section .kind {
+    display: flex;
+    justify-content: space-between;
+}
+.kind__section ul {
+    width: 48%;
+}
+.kind__section ul li {
+    word-break: keep-all;
+    margin-bottom: 5px;
+    line-height: 1.7;
+}
+.kind__section iframe {
+    width: 48%;
+}
+.kind__section .part {
+    font-size: 30px;
+    margin: 100px 0 100px 0;
+}
+.kind__section .part::before {
+    content: '* ';
+}
+.kind__section figure {
+    margin-bottom: 100px;
+}
+.kind__section img {
+    width: 70%;
+    height: 400px;
+}
