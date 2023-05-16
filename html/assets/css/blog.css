@@ -87,6 +87,14 @@
     float: right;
     margin: 3px;
 }
+.blog__write select {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 40px;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+}
 
 /* blog__title */
 .blog__title {
