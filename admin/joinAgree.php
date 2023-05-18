@@ -134,9 +134,9 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div style="text-align: center;">
                 <p class="agreeMsg"></p>
-                <a href="adminSave.php" class="btnStyle agreeBtn">동의</a>
+                <a href="joinSave.php" class="btnStyle agreeBtn">동의</a>
             </div>
             
         </div>

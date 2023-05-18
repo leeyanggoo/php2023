@@ -38,7 +38,7 @@
                 </ul>
             </div>
             <div class="join__form">
-                <form action="adminResult.php" name="adminResult" method="post" onsubmit="return joinChecks()">
+                <form action="joinResult.php" name="joinResult" method="post" onsubmit="return joinChecks()">
                     <fieldset>
                         <legend class="blind">회원가입 영역</legend>
                         <div>
@@ -117,7 +117,7 @@
             }else {
                 $.ajax({
                     type : "POST",
-                    url : "adminCheck.php",
+                    url : "joinCheck.php",
                     data : {"youEmail" : youEmail, "type" : "isEmailCheck"},
                     dataType : "json",
 
@@ -162,7 +162,7 @@
             } else {
                 $.ajax({
                     type : "POST",
-                    url : "adminCheck.php",
+                    url : "joinCheck.php",
                     data : {"youNick":youNick, "type" : "isNickCheck"},
                     dataType : "json",
 

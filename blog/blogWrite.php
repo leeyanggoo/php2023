@@ -59,7 +59,7 @@
                         </div>
                         <div class="mt30">
                             <label for="blogFile">파일</label>
-                            <input type="file" id="blogFile" name="blogFile" accept=".jpg, .jpge, .png, .gif" placeholder="jpg, jpge, png, gif 파일만 넣을 수 있습니다. 이미지 용량은 1MB를 넘을 수 없습니다.">
+                            <input type="file" id="blogFile" name="blogFile" accept=".jpg, .jpeg, .png, .gif" placeholder="jpg, jpeg, png, gif 파일만 넣을 수 있습니다. 이미지 용량은 1MB를 넘을 수 없습니다.">
                         </div>
                         <button type="submit" class="btnStyle3">저장하기</button>
                     </fieldset>

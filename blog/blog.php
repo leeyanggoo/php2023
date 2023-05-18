@@ -43,11 +43,10 @@
         </div>
         <div class="blog__inner">
             <div class="left">
-                
                 <div class="blog__wrap">
                     <h2>All Posts</h2>
                     <div class="cards__inner col2 line2">
-                        <div class="card">
+                        <!-- <div class="card">
                             <figure class="card__img">
                                 <source srcset="../assets/img/blog01.png, ../assets/img/blog01@2x.png 2x, ../assets/img/blog01@3x.png 3x">
                                 <img src="../assets/img/blog01.png" alt="소개 이미지">
@@ -58,150 +57,39 @@
                             </div>
                             <div class="card__info">
                                 <a href="#" class="more">더보기</a>
-                                <!-- <span>글쓴이</span>
-                                <span>조회수</span>
-                                <span>좋아요</span> -->
                             </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog02.png, ../assets/img/blog02@2x.png 2x, ../assets/img/blog02@3x.png 3x">
-                                <img src="../assets/img/blog02.png" alt="소개 이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>프로젝트 경험 쌓기</h3>
-                                <p>실제 프로젝트에 참여하여 경험을 쌓는 것은 중요합니다. 개인 프로젝트나 오픈 소스 프로젝트에 기여하거나, 팀 프로젝트에 참여하여 협업 능력을 향상시킬 수 있습니다. 다양한 프로젝트에 참여하면서 문제를 해결하고 새로운 아이디어를 구현해보세요.</p>
-                            </div>
-                            <div class="card__info">
-                                <a href="#" class="more">더보기</a>
-                                <!-- <span>글쓴이</span>
-                                <span>조회수</span>
-                                <span>좋아요</span> -->
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog03.png, ../assets/img/blog03@2x.png 2x, ../assets/img/blog03@3x.png 3x">
-                                <img src="../assets/img/blog03.png" alt="소개 이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>코드 리뷰와 피드백 받기</h3>
-                                <p>다른 개발자들과 소통하고 협업하는 능력을 키우기 위해 코드 리뷰와 피드백을 받는 것이 중요합니다. 개발 커뮤니티나 오픈 소스 프로젝트에서 다른 사람들의 코드를 검토하고, 자신의 코드에 대한 피드백을 받아보세요. 이를 통해 개선할 점을 찾고 더 나은 코드를 작성할 수 있습니다.</p>
-                            </div>
-                            <div class="card__info">
-                                <a href="#" class="more">더보기</a>
-                                <!-- <span>글쓴이</span>
-                                <span>조회수</span>
-                                <span>좋아요</span> -->
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog04.png, ../assets/img/blog04@2x.png 2x, ../assets/img/blog04@3x.png 3x">
-                                <img src="../assets/img/blog04.png" alt="소개 이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>사용자 경험(UX)에 대한 이해</h3>
-                                <p>프론트엔드 개발은 사용자와 직접적으로 상호작용하는 부분이 많습니다. 따라서 사용자 경험에 대한 이해가 필요합니다. 사용자 중심의 디자인과 인터페이스 원칙을 학습하고, 웹 사이트나 애플리케이션의 사용자 경험을 개선하기 위해 노력해보세요.</p>
-                            </div>
-                            <div class="card__info">
-                                <a href="#" class="more">더보기</a>
-                                <!-- <span>글쓴이</span>
-                                <span>조회수</span>
-                                <span>좋아요</span> -->
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog04.png, ../assets/img/blog04@2x.png 2x, ../assets/img/blog04@3x.png 3x">
-                                <img src="../assets/img/blog04.png" alt="소개 이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>사용자 경험(UX)에 대한 이해</h3>
-                                <p>프론트엔드 개발은 사용자와 직접적으로 상호작용하는 부분이 많습니다. 따라서 사용자 경험에 대한 이해가 필요합니다. 사용자 중심의 디자인과 인터페이스 원칙을 학습하고, 웹 사이트나 애플리케이션의 사용자 경험을 개선하기 위해 노력해보세요.</p>
-                            </div>
-                            <div class="card__info">
-                                <a href="#" class="more">더보기</a>
-                                <!-- <span>글쓴이</span>
-                                <span>조회수</span>
-                                <span>좋아요</span> -->
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog04.png, ../assets/img/blog04@2x.png 2x, ../assets/img/blog04@3x.png 3x">
-                                <img src="../assets/img/blog04.png" alt="소개 이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>사용자 경험(UX)에 대한 이해</h3>
-                                <p>프론트엔드 개발은 사용자와 직접적으로 상호작용하는 부분이 많습니다. 따라서 사용자 경험에 대한 이해가 필요합니다. 사용자 중심의 디자인과 인터페이스 원칙을 학습하고, 웹 사이트나 애플리케이션의 사용자 경험을 개선하기 위해 노력해보세요.</p>
-                            </div>
-                            <div class="card__info">
-                                <a href="#" class="more">더보기</a>
-                                <!-- <span>글쓴이</span>
-                                <span>조회수</span>
-                                <span>좋아요</span> -->
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog04.png, ../assets/img/blog04@2x.png 2x, ../assets/img/blog04@3x.png 3x">
-                                <img src="../assets/img/blog04.png" alt="소개 이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>사용자 경험(UX)에 대한 이해</h3>
-                                <p>프론트엔드 개발은 사용자와 직접적으로 상호작용하는 부분이 많습니다. 따라서 사용자 경험에 대한 이해가 필요합니다. 사용자 중심의 디자인과 인터페이스 원칙을 학습하고, 웹 사이트나 애플리케이션의 사용자 경험을 개선하기 위해 노력해보세요.</p>
-                            </div>
-                            <div class="card__info">
-                                <a href="#" class="more">더보기</a>
-                                <!-- <span>글쓴이</span>
-                                <span>조회수</span>
-                                <span>좋아요</span> -->
-                            </div>
-                        </div>
-                        <div class="card">
-                            <figure class="card__img">
-                                <source srcset="../assets/img/blog04.png, ../assets/img/blog04@2x.png 2x, ../assets/img/blog04@3x.png 3x">
-                                <img src="../assets/img/blog04.png" alt="소개 이미지">
-                            </figure>
-                            <div class="card__title">
-                                <h3>사용자 경험(UX)에 대한 이해</h3>
-                                <p>프론트엔드 개발은 사용자와 직접적으로 상호작용하는 부분이 많습니다. 따라서 사용자 경험에 대한 이해가 필요합니다. 사용자 중심의 디자인과 인터페이스 원칙을 학습하고, 웹 사이트나 애플리케이션의 사용자 경험을 개선하기 위해 노력해보세요.</p>
-                            </div>
-                            <div class="card__info">
-                                <a href="#" class="more">더보기</a>
-                                <!-- <span>글쓴이</span>
-                                <span>조회수</span>
-                                <span>좋아요</span> -->
-                            </div>
-                        </div>
+                        </div> -->
+<?php
+    $sql = "SELECT * FROM blog WHERE blogDelete = 0 ORDER BY blogID DESC";
+    $result = $connect -> query($sql);
+?>
+<!-- 데이터 불러오기 -->
+<?php foreach($result as $blog){ ?>
+    <div class="card">
+        <figure class="card__img">
+            <a href="blogView.php?blogID=<?=$blog['blogID']?>">
+                <img src="../assets/blog/<?=$blog['blogImgFile']?>" alt="<?=$blog['blogTitle']?>">
+            </a>
+        </figure>
+        <div class="card__title">
+            <h3><?=$blog['blogTitle']?></h3>
+            <p><?=$blog['blogContents']?></p>
+        </div>
+        <div class="card__info">
+            <a href="#" class="more">더보기</a>
+        </div>
+    </div>
+<?php } ?>
                     </div>
                 </div>
             </div>
             <div class="right">
                 <div class="blog__aside">
-                    <div class="intro">
-                        <div class="img">
-                            <picture>
-                                <source srcset="../assets/img/intro02.png, ../assets/img/intro02@2x.png 2x, ../assets/img/intro02@3x.png 3x">
-                                <img src="../assets/img/intro02.png" alt="소개 이미지">
-                            </picture>
-                        </div>
-                        <p class="text">Jesus Crying<br>
-                            난 그러라고 한 적 없다.</p>
-                    </div>
-                    <div class="cate">
-                        <h4>카테고리</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>최신글</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>인기글</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>최근 댓글</h4>
-                    </div>
+                    <?php include "../include/blogTitle.php" ?>
+                    <?php include "../include/blogCate.php" ?>
+                    <?php include "../include/blogLatest.php" ?>
+                    <?php include "../include/blogPopular.php" ?>
+                    <?php include "../include/blogComment.php" ?>
                 </div>
             </div>
         </div>
