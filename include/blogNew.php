@@ -1,11 +1,11 @@
 <div class="cate list2">
-    <h4>인기글</h4>
+    <h4>최신글</h4>
     <ul>
         <?php
-            $blogPopular = "SELECT * FROM blog WHERE blogDelete = 0 ORDER BY blogView DESC LIMIT 4";
-            $blogPopularResult = $connect -> query($blogPopular);
+            $blogNew = "SELECT * FROM blog WHERE blogDelete = 0 ORDER BY blogID DESC LIMIT 4";
+            $blogNewResult = $connect -> query($blogNew);
 
-            foreach($blogPopularResult as $blog){ ?>
+            foreach($blogNewResult as $blog){ ?>
                 <li>
                     <a href="blogView.php?blogID=<?=$blog['blogID']?>">
                         <img src="../assets/blog/<?=$blog['blogImgFile']?>" alt="<?=$blog['blogTitle']?>">
