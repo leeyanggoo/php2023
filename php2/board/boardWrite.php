@@ -14,8 +14,49 @@
     <link rel="stylesheet" href="../html/assets/css/style.css">
     <!-- Toast UI Editor -->
     <style>
-        .ck-editor__editable { 
-            height: 400px;
+        .ck.ck-editor{
+            width: 100%;
+        }
+        .ck-editor__editable {
+            height: 600px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            word-break: break-all;
+        }
+        .ck.ck-button.ck-off {
+            color: #fff;
+            background-color: #464B5F;
+        }
+        .ck.ck-button.ck-off:hover {
+            color: #000;
+        }
+        .ck.ck-button__label {
+            background-color: #464B5F;
+        }
+        .ck.ck-icon.ck-icon_inherit-color:hover,
+        .ck.ck-button__label:hover {
+            color: #000 !important;
+        }
+        .ck.ck-toolbar.ck-toolbar_grouping {
+            background-color: #464B5F;
+            border: 3px solid #fff;
+        }
+        .ck-blurred.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline,
+        .ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-blurred,
+        .ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused {
+            background-color: #464B5F;
+            border: 3px solid #fff;
+            border-radius: 0 0 20px 20px;
+
+        }
+        .ck.ck-dropdown.ck-heading-dropdown:hover {
+            background-color: #464B5F !important;
+        }
+        .ck.ck-list__item .ck.ck-button.ck-heading_paragraph.ck-on.ck-button_with-text:hover {
+            color: #000;
+        }
+        .ck.ck-list__item .ck.ck-button.ck-on {
+            background-color: #fff;
             color: #000;
         }
     </style>
@@ -39,7 +80,7 @@
         </div>
         <!-- banner -->
         <div class="board__write">
-            <h2>COMMUNITY</h2>
+            <h2>게시글 작성</h2>
             <form action="boardWriteSave.php" name="boardWriteSave" method="post" enctype="multipart/form-data">
                 <fieldset>
                     <legend class="blind">게시글 작성하기</legend>

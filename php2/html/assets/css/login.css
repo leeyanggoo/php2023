@@ -18,6 +18,16 @@
     z-index: 20000;
     overflow-y: scroll;
 }
+.login__popup3 {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #14032f61;
+    backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    z-index: 20000;
+    display: none;
+}
 .login__wrap {
     color: #fff;
     position: absolute;
@@ -203,6 +213,11 @@
     font-weight: bold;
     -webkit-text-stroke: 1px #343846;
     font-size: 20px;
+}
+.login__form .comment {
+    color: red;
+    text-align: center;
+    margin-bottom: 30px;
 }
 .gender {
     display: flex;

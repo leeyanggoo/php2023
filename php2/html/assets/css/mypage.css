@@ -38,8 +38,7 @@
 }
 .section__left a {
     display: block;
-    width: 175px;
-    height: 40px;
+    width: 80%;
     text-align: center;
     line-height: 40px;
     border-radius: 20px;
@@ -54,11 +53,12 @@
 /* section__right */
 .section__right {
     width: 70%;
-    padding: 30px;
+    padding: 50px 0;
     background-color: rgba(0,0,0,0.2);
     border-radius: 20px;
     align-items: center;
     display: flex;
+    justify-content: center;
 }
 .section__right form {
     width: 80%;
@@ -72,6 +72,7 @@
 .section__right form .box {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 .section__right form .box label {
@@ -89,6 +90,20 @@
     font-size: 30px;
     text-align: left;
 }
+.section__right form .box p {
+    width: 100%;
+    color: red;
+    margin-top: 10px;
+}
+.section__right button {
+    width: 60%;
+    line-height: 40px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #5770F8;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
 
 
 /* mypageModify.html */
@@ -100,11 +115,11 @@
     align-items: center;
 }
 .section__left a.mymo__profile {
-    background-color: #E7AAAA;
+    background-color: #5770F8;
     color: #000;
 }
 .section__left a.mymo__complate {
-    background-color: #E7AAAA;
+    background-color: #5770F8;
     color: #000;
 }
 
@@ -113,7 +128,29 @@
     text-align: center;
     border-radius: 5px;
 }
-
+.section__right form .box {
+    margin: 20px 0 30px 0;
+}
+.section__right form .box .check__wrap {
+    width: 70%;
+}
+.section__right form .box .check__wrap .input__wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.btnStyleM {
+    width: 29%;
+    text-align: center;
+    background-color: #5770F8;
+    padding: 10px 0;
+    border-radius: 5px;
+    color: var(--color__white)
+}
+.section__right form .box .check__wrap .warning {
+    text-align-last: left;
+    color: red;
+}
 
 
 /* mypagePassword.html */

@@ -41,8 +41,7 @@
                     <button type="button" class="btnStyle idFind__close">닫기</button>
                 </div>
             </form>            
-        </div> 
-               
+        </div>  
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

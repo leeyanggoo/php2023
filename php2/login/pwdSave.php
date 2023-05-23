@@ -14,12 +14,11 @@
     <link rel="stylesheet" href="../html/assets/css/style.css">
 </head>
 <body>
-    <div class="login__popup2">
-        <div class="login__wrap">
-            <div class="login__title">
-                <div class="login__logo">
-                    <img src="../html/assets/img/logo.png" alt="로고">
-                </div>            
+    <div class="login__wrap">
+        <div class="login__title">
+            <div class="login__logo">
+                <img src="../html/assets/img/logo.png" alt="로고">
+            </div>            
 <?php
     $userEmail = $_POST['userEmail'];
     $userName = $_POST['userName'];
@@ -69,7 +68,6 @@
         </script>";
     }
 ?>
-        </div>
     </div>
     
     <script>

@@ -40,10 +40,6 @@
                         <input type="email" id="userEmail" class="inputStyle2 userEmail" name="userEmail" placeholder="이메일을 입력해주세요." required>
                         <a href="#c" class="btnStyle2" onclick="emailChecking()">중복 확인</a>
                         <p class="warning" id="userEmailComment"><!--이메일 검사--></p>
-
-                        <!-- <button class="btnStyle2 overlap__confirm">중복 확인</button> 
-                             onClick="; top.location.href='profile.php';"
-                        -->
                     </div>
                     <div class="form2">
                         <label for="userName" class="ir">이름</label>
@@ -96,6 +92,20 @@
         function emailChecking(){
             let userEmail = $("#userEmail").val();
 
+            // 이메일 유효성 검사
+            if($("#userEmail").val() == ''){
+                $("#userEmailComment").text("* 이메일을 입력해주세요!");
+                $("#userEmail").focus();
+                return false;
+            }
+            let getuserEmail = RegExp(/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([\-.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i);
+            if(!getuserEmail.test($("#userEmail").val())){
+                $("#userEmailComment").text("* 이메일 형식에 맞게 작성해주세요!");
+                $("#userEmail").val('');
+                $("#userEmail").focus();
+                return false;
+            }
+
             if(userEmail == null || userEmail == ''){
                 $("#userEmailComment").text("* 이메일을 입력해주세요");
             }else {
@@ -109,12 +119,11 @@
                         if(data.result == "good"){
                             $("#userEmailComment").text("* 사용 가능한 이메일 입니다");
                             isEmailCheck = true;
-                        } else {
+                        }else {
                             $("#userEmailComment").text("* 이미 존재하는 이메일 입니다");
                             isEmailCheck = false;
                         }
                     },
-
                     error : function(request, status, error){
                         console.log("request" + request);
                         console.log("status" + status);
@@ -126,22 +135,39 @@
 
         function nickChecking(){
             let userNickname = $("#userNickname").val();
+
+            // 닉네임 유효성 검사
+            if($("#userNickname").val() == ''){
+                $("#userNicknameComment").text("* 닉네임을 입력해주세요!");
+                $("#userNickname").focus();
+                return false;
+            }
+
+            let getuserNickname = RegExp(/^[가-힣|0-9]+$/);
+            if(!getuserNickname.test($("#userNickname").val())){
+                $("#userNicknameComment").text("* 닉네임은 한글 또는 숫자만 사용 가능합니다.");
+                $("#userNickname").val('');
+                $("#userNickname").focus();
+                return false;
+            }
+
             if(userNickname == null || userNickname == ''){
                 $("#userNicknameComment").text("* 닉네임을 입력해주세요!");
             } else {
                 $.ajax({
                     type : "POST",
-                    url: "joinend.php",
-                    data: {"userNickname": userNickname, "type": "isNickCheck"},
-                    dataType: "json",
+                    url : "joinend.php",
+                    data : {"userNickname" : userNickname, "type" : "isNickCheck"},
+                    dataType : "json",
+
                     success : function(data){
                         if(data.result == "good"){
                             $("#userNicknameComment").text("* 사용 가능한 닉네임 입니다");
                             isNickCheck = true;
-                        } else {
+                        }else {
                             $("#userNicknameComment").text("* 이미 존재하는 닉네임 입니다");
-                            isNickCheck = false;
-                        }
+                            isNickCheck = true;
+                        }   
                     },
                     error : function(request, status, error){
                         console.log("request" + request);
@@ -167,36 +193,13 @@
                 return false;
             }
 
-            // 이메일 유효성 검사
-            if($("#userEmail").val() == ''){
-                $("#userEmailComment").text("* 이메일을 입력해주세요!");
-                $("#userEmail").focus();
-                return false;
-            }
-
-            let getuserEmail = /^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i;
-            if(!getuserEmail.test($("#userEmail").val())){
-                $("#userEmailComment").text("이메일을 형식에 맞게 작성해주세요.");
-                $("#userEmail").val('');
-                return false;
-            }
-            
-            // 닉네임 유효성 검사 
-            if($("#userNickname").val() == ''){
-                $("#userNicknameComment").text("* 닉네임을 입력해주세요!");
-                $("#userNickname").focus();
-                $("#userNickname").val('');
-                return false;
-            }
-
-            let getuserNickname = RegExp(/^[가-힣|0-9]+$/);
-            if(!getuserNickname.test($("#userNickname").val())){
-                $("#userNicknameComment").text("* 닉네임은 한글 또는 숫자만 사용 가능합니다.");
-                $("#userNickname").val('');
-                $("#userNickname").focus();
-                return false;
-            }
-
+            // let getYouEmail = RegExp(/^[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([\-.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i);
+            // if(!getYouEmail.test($("#youEmail").val())){
+            //     $("#youEmailComment").text("* 이메일 형식에 맞게 작성해주세요!");
+            //     $("#youEmail").val('');
+            //     $("#youEmail").focus();
+            //     return false;
+            // }
 
             // 비밀번호 유효성 검사
             if($("#userPass").val() == ''){

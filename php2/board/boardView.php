@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="../html/assets/css/style.css">
     <!-- SCRIPT -->
     <script defer src="assets/js/common.js"></script>
+    <style>
+        .board__view p a {
+            color: #fff;
+        }
+        .board__contents a {
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <div id="wrap">
@@ -31,7 +39,7 @@
         <!-- banner -->
         <div class="board__box">
             <div class="board__view">
-                <h2>COMMUNITY</h2>
+                <h2>게시글</h2>
                 <div class="board__main">
                     <!-- <div class="board__title"><p>벤치 프레스하는 방법</p></div>
                     <div class="board__desc">

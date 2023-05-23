@@ -1,14 +1,15 @@
 <?php
+    // phpinfo();
     $host = "localhost";
-    $user = "leeyanggoo";
-    $pw = "as024631!";
-    $db = "leeyanggoo";
+    $user = "root";
+    $pw = "root";
+    $db = "phpClass";
     $connect = new mysqli($host, $user, $pw, $db);
-    $connect -> set_charset("uft-8");
+    $connect -> set_charset("utf-8");
 
     if(mysqli_connect_errno()){
-        echo "Database Connect False";
+        echo "database Connect False";
     } else {
-        // echo "Database Connect True";
+        // echo "database Connet True";
     }
 ?>

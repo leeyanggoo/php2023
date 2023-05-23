@@ -1,7 +1,17 @@
+<?php
+    include "../connect/connect.php";
+    include "../connect/session.php";
+?>
+
 <header id="header">
     <h1><a href="../main/main.php">헬드백</a></h1>
     <div class="header__login">
-      <?php if(isset($_SESSION['memberID'])){?>
+      <?php if(isset($_SESSION['memberID'])){
+            $memberID = $_SESSION['memberID'];
+            $sql = "SELECT * FROM userMembers WHERE memberID = {$memberID}";
+            $result = $connect -> query($sql);
+            $info = $result -> fetch_array(MYSQLI_ASSOC);
+        ?>
         <ul>
             <li><a href="#"><?= $_SESSION['userName'] ?> 회원님</a></li>
         </ul>
@@ -10,12 +20,12 @@
     <div class="icon__box">
         <ul>
             <?php if(isset($_SESSION['memberID'])){?>
-                 <li class="logout"><a href="../login/logout.php"><img src="../html/assets/img/icon_logout.svg" alt="로그아웃" title="로그아웃"></a></li>
-                 <li><a href="#"><img src="../html/assets/img/icon_mypage.svg" alt="마이페이지" title="마이페이지"></a></li>
+                <li class="logout"><a href="../login/logout.php"><img src="../html/assets/img/icon_logout.svg" alt="로그아웃" title="로그아웃"></a></li>
+                <li><a href="../mypage/mypage.php"><img src="../html/assets/img/icon_mypage.svg" alt="마이페이지" title="마이페이지"></a></li>
             <?php } else{?>
                 <li class="login"><img src="../html/assets/img/icon_login.svg" alt="로그인" title="로그인"></li>
             <?php } ?>
-            <li class="btn__menu"><a href="#"><img src="../html/assets/img/icon_menu.svg" alt="메뉴" title="메뉴"></a></li>
+            <li class="btn__menu"><a href="#c"><img src="../html/assets/img/icon_menu.svg" alt="메뉴" title="메뉴"></a></li>
         </ul>
     </div>
 </header>
@@ -24,18 +34,26 @@
 <nav id="nav">
     <button>X</button>
     <div class="nav__wrap">
-        <img src="../html/assets/img/logo.png" alt="logo">
         <?php if(isset($_SESSION['memberID'])){?>
-            <img class="profile" src="../html/assets/img/profile.png" alt="프로필">
+            <img class="profile" src="../assets/profile/<?= $info['userImgSrc']?>" alt="프로필">
             <a class="logout btnStyle5" href="../login/logout.php">로그아웃</a>
         <?php } else{?>
+            <img src="../html/assets/img/logo.png" alt="logo">
             <a href="#c" class="login btnStyle5">로그인</a>
         <?php } ?>
         <ul>
-            <li><a href="intro.html">헬드백 소개</a></li>
-            <li><a href="mainSection.html">운동 종류</a></li>
+        <?php if(isset($_SESSION['memberID'])){?>
+            <li><a href="../main/intro.html">헬드백 소개</a></li>
+            <li><a href="../main/mainSection.php">운동 종류</a></li>
+            <li><a href="../blog/blog.php">운동 방법 공유</a></li>
             <li><a href="../board/board.php">커뮤니티</a></li>
-            <li><a href="mypage.html">마이페이지</a></li>
+            <li><a href="../mypage/mypage.php">마이페이지</a></li>
+        <?php } else{?>
+            <li><a href="../main/intro.html">헬드백 소개</a></li>
+            <li><a href="../main/mainSection.php">운동 종류</a></li>
+            <li><a href="../blog/blog.php">운동 방법 공유</a></li>
+            <li><a href="../board/board.php">커뮤니티</a></li>
+        <?php } ?>
         </ul>
     </div>
 </nav>

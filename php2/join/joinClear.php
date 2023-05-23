@@ -39,7 +39,7 @@
             // $userPass = password_hash($userPass, PASSWORD_DEFAULT);
             
             // 회원가입
-            $sql = "INSERT INTO userMembers(userEmail, userName, userNickname, userPass, userPhone, userGender, userRegTime) VALUES('$userEmail', '$userName', '$userNickname', '$userPass', '$userPhone', '$userGender', '$userRegTime')";
+            $sql = "INSERT INTO userMembers(userEmail, userName, userNickname, userPass, userPhone, userGender, userImgSrc, userRegTime) VALUES('$userEmail', '$userName', '$userNickname', '$userPass', '$userPhone', '$userGender', 'img_default.jpg', '$userRegTime')";
             $result = $connect -> query($sql);
             // echo $sql;
             if($result){

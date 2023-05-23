@@ -47,6 +47,7 @@ main {
 .board__search button {
     margin-right: 10px;
 }
+
 .board__table {
     margin-top: 10px;
     margin-bottom: 60px;
@@ -115,6 +116,11 @@ main {
     border-bottom: 3px solid var(--color__white);
     margin-bottom: 50px;
 }
+.board__main img {
+    width: 50%;
+    height: 50vh;
+    padding: 20px;
+}
 .board__title {
     border-bottom: 1px solid var(--color__white);
 } 
@@ -148,17 +154,31 @@ main {
     color: #fff;
     padding: 120px 200px;
     background-color: #464B5F;
+    text-align: left;
 }
 .board__write h2 {
     font-size: 50px;
     margin-bottom: 50px;
+    text-align: center;
 }
 .board__write label {
     width: 100%;
     font-size: 20px;
     display: block;
     margin-bottom: 10px;
-    text-align: left !important;
+}
+.board__write select {
+    width: 300px;
+    height: 50px;
+    padding: 5px;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    background-color: #464B5F;
+    color: #fff;
+    border-radius: 20px;
+}
+.board__write select option {
+    padding: 300px;
 }
 .board__write input {
     margin-bottom: 50px;

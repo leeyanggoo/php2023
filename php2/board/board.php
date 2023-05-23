@@ -1,10 +1,6 @@
 <?php
   include "../connect/connect.php";
   include "../connect/session.php";
-//   echo $_SESSION['adminMemberID'], $_SESSION['adminEmail'], $_SESSION['adminName'];
-  // echo "<pre>";
-  // var_dump($_SESSION);
-  // echo "</pre>";
 ?>
 <!DOCTYPE html>
 <html lang="ko">
@@ -39,7 +35,7 @@
                     <form action="boardSearch.php" name="boardSearch" method="get">
                         <fieldset>
                             <legend class="blind">게시판 검색 영역</legend>
-                            <input type="search" placeholder="검색어를 입력하세요!">
+                            <input type="search" name="searchKeyword" id="searchKeyword" placeholder="검색어를 입력하세요!">
                             <select name="searchOption" id="searchOption">
                                 <option value="title">제목</option>
                                 <option value="content">내용</option>

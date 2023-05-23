@@ -221,7 +221,7 @@
     display: inline-block;
     margin-bottom: 40px;
 }
-.blog__comment .comment__write {
+.blog__comment fieldset {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -290,6 +290,7 @@
 }
 .comment__delete button {
     border: 1px solid #a4a4a4;
+    cursor: pointer;
 }
 .comment__delete button:last-child {
     background-color: #d6d6d6;
