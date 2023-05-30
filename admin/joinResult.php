@@ -32,7 +32,9 @@
             background-position: center center;
             background-size: contain;
             background-repeat: no-repeat;
-            transform: translate(50%, -500%);
+            position: absolute;
+            top: -300px;
+            /* animation: fall 10s linear; */
         }
         @keyframes fall {
             from { }
@@ -52,7 +54,7 @@
     <!-- //header -->
 
     <main id="main" class="container">
-    <div class="intro__inner center bmStyle">
+        <div class="intro__inner center bmStyle">
             <div class="intro__images good">
                 <picture>
                     <source srcset="../assets/img/admin01.png, ../assets/img/admin01@2x.png 2x, ../assets/img/admin01@3x.png 3x">
@@ -82,24 +84,25 @@
     </main>
     <!-- //main -->
 
+    <!-- <div class="money"></div> -->
+
     <?php include "../include/footer.php" ?>
     <!-- //footer -->
 
     <script>
-        const MIN_DURATION = 5;
         const body = document.querySelector("body");
+        const MIN_DURATION = 5;
 
-        window.onload = makeMoney();
         function makeMoney() {
             const money = document.createElement("div");
             const delay = Math.random() * 10;
-            const randomOpacity = Math.random();
+            const initialOpacity = Math.random();
             const duration = Math.random() * 20 + MIN_DURATION;
 
-            money.classList.add("money", "fixed");
+            money.classList.add("money");
             money.style.left = `${Math.random() * window.screen.width}px`;
-            money.style.animationDelay = `${parseInt(delay)}s`;
-            money.style.opacity = randomOpacity;
+            money.style.animationDelay = `${delay}s`;
+            money.style.opacity = initialOpacity;
             money.style.animation = `fall ${duration}s linear`;
 
             body.appendChild(money);
@@ -109,9 +112,9 @@
                 makeMoney();
             }, (duration + delay) * 1000);
         };
-        for(let index = 0; index < 30; index++){
+        for(let index = 0; index < 20; index++){
             setTimeout(makeMoney, 500 * index);
-        };
+        }
     </script>
 </body>
 </html>
